@@ -710,15 +710,15 @@ c) `(n & 1) == 0` no funciona con números negativos en ningún compilador C est
 d) No hay ninguna diferencia; el compilador genera exactamente el mismo código para ambas
 
 ```
-RESPUESTA_P4=
+RESPUESTA_P4=b
 ```
 
 **P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
 
-> R:
+> R:La versión con % 2 es más legible para cualquier programador, mientras que & 1 es una optimización a nivel de bits. Elegiría la primera por claridad, salvo que esté trabajando en sistemas con recursos muy limitados.
 
 ```
-PARTE_IV_COMPLETA=
+PARTE_IV_COMPLETA=SI
 ```
 _(escribí SI cuando el conflicto esté resuelto y pusheado)_
 
@@ -739,7 +739,7 @@ c) Si hay que revertir un cambio puntual es imposible sin deshacer todo lo del d
 d) Git rechaza commits que modifiquen demasiados archivos al mismo tiempo
 
 ```
-RESPUESTA_P5=
+RESPUESTA_P5=c
 ```
 
 ---
@@ -755,7 +755,7 @@ c) `git fetch` solo descarga la branch actual; `git pull` descarga todas las bra
 d) `git pull` siempre pide confirmación antes de modificar archivos locales; `git fetch` no
 
 ```
-RESPUESTA_P6=
+RESPUESTA_P6=b
 ```
 
 ---
@@ -771,20 +771,20 @@ c) Qué problema resuelve o qué funcionalidad agrega, cómo se verificó que fu
 d) El tiempo que tardó en implementarse y el nombre del autor
 
 ```
-RESPUESTA_P7=
+RESPUESTA_P7=c
 ```
 
 **P3** — Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problemas puede traer esa práctica? ¿Qué le dirías?
 
-> R:
+> R:Le diría que es peligroso porque si rompe algo, no puede volver a un punto intermedio sin perder todo el trabajo del día. Además, para los compañeros es imposible revisar un cambio tan grande. Lo ideal es hacer commits pequeños por cada tarea terminada.
 
 **P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
 
-> R:
+> R:git fetch solo descarga la información del servidor pero no cambia mis archivos. git pull hace eso y además intenta mezclarlo con mi código. Preferiría usar fetch primero para revisar si hay conflictos antes de que se mezclen con mi trabajo local.
 
 **P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
 
-> R:
+> R:Debe incluir el objetivo del cambio, cómo probar que funciona y si hubo alguna decisión importante en el código. Esto ayuda al revisor a entender el contexto sin tener que adivinar viendo solo las líneas de código.
 
 
 ---
