@@ -22,7 +22,7 @@ int restar(int a, int b) {
 //esta funcion multiplica dos enteros
 int multiplicar(int a, int b) {
     return a * b;
-
+}
 
 int multiplicar(int a, int b) {
     (void)a; (void)b;
@@ -33,8 +33,7 @@ int multiplicar(int a, int b) {
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
-
-    return (n % 2) == 0; // version main //
+    return (n % 2) == 0;
 }
 
 int dividir(int a, int b) {
