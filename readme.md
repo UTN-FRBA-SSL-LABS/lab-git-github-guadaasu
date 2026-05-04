@@ -859,5 +859,5 @@ El puntaje mínimo para aprobar es **60 / 100**.
 - Preguntas P1–P5 respondidas
 - Push a `main`
 
-El CI corre automáticamente. En la pestaña **Actions** podés ver qué checks pasan.
+El CI corre automáticamente. En la pestaña **Actions** podés ver qué checks pasan..
 
