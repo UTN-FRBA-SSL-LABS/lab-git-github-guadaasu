@@ -14,14 +14,10 @@ int restar(int a, int b) {
 
 /* ── multiplicar ─────────────────────────────────────────────────────────── */
 
-// Esta funcion multiplica dos enteros
 int multiplicar(int a, int b) {
     return a * b;
 }
 
-/* ── esPar ───────────────────────────────────────────────────────────────── */
-
-int esPar(int n) {
-    return (n % 2) == 0;
+int esPar(int a) {
+    return a % 2 == 0;
 }
-<!-- Trigger final -->
